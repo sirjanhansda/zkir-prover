@@ -1,0 +1,57 @@
+[package]
+name = "zkir-prover"
+version = "0.1.0"
+edition = "2021"
+authors = ["seceq"]
+description = "STARK prover for ZK IR using Plonky3 with Baby Bear field"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/seceq/zkir-prover"
+
+[dependencies]
+# Plonky3 - STARK proving system (pinned to stable release)
+p3-air = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-baby-bear = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-challenger = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-commit = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-dft = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-field = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-fri = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-keccak = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-matrix = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-merkle-tree = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-poseidon2 = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-symmetric = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-uni-stark = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+p3-util = { git = "https://github.com/Plonky3/Plonky3.git", rev = "1ba4e5c" }
+
+# CLI
+clap = { version = "4", features = ["derive"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+bincode = "1"
+
+# Error handling
+thiserror = "1"
+anyhow = "1"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Utilities
+rand = "0.8"
+hex = "0.4"
+byteorder = "1"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "prover_bench"
+harness = false
+
+[profile.release]
+lto = true
+codegen-units = 1
